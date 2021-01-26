@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/selection"
+            android:text="Дни недели"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp">
+            <Spinner
+                android:id="@+id/daysofweek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/sbjcts"
+            android:text="Пары"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/para1begin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="С 11:05"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/para1end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="До 12:25"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/EditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="1 пара"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/para2begin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="С 13:00"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/para2end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="До 14:20"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/EditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:hint="2 пара"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/para3begin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="С 14:30"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/para3end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="До 15:50"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            <EditText
+                android:id="@+id/EditText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="3 пара"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/para4begin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="С 16:00"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/para4end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="До 17:20"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            <EditText
+                android:id="@+id/EditText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="4 пара"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="23dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/para5begin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="С 17:30"
+                        android:textColor="@android:color/black"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/para5end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="До 18:50"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            <EditText
+                android:id="@+id/EditText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="5 пара"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_gravity="center_horizontal">
+                    <RadioButton
+                        android:id="@+id/radioButton0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Белая неделя"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Черная неделя"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Button
+                        android:id="@+id/Button1"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/layout_bg1"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Сохранить"
+                        android:layout_gravity="center_horizontal"/>
+                </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/StartService"
+                        android:layout_width="wrap_content"
+                        android:onClick="startService"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/layout_bg1"
+                        android:layout_height="37dp"
+                        android:layout_margin="3dp"
+                        android:layout_gravity="center"
+                        android:text="Вкл. уведомления"/>
+                    <Button
+                        android:id="@+id/StopService"
+                        android:onClick="stopService"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="3dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/layout_bg1"
+                        android:layout_height="37dp"
+                        android:text="Выкл. уведомления"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
