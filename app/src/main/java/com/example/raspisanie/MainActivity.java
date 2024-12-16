@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
                 DialogFragment timePicker = new TimePickerFragment();
                 timePicker.show(getSupportFragmentManager(), "time picker");
                 para = "para1bg";
+               // if (para1bg.getText())
                 TimePickerFragment.hour = Integer.valueOf(para1bg.getText().toString().substring(2,4));
                 TimePickerFragment.minute = Integer.valueOf(para1bg.getText().toString().substring(5,7));
             }
@@ -494,16 +495,16 @@ public class MainActivity extends AppCompatActivity implements TimePickerDialog.
 
     void loadText() {
         sPref = getPreferences(MODE_PRIVATE);
-        para1bg.setText(sPref.getString("para1bg", "С (вр.)"));
-        para2bg.setText(sPref.getString("para2bg", "С (вр.)"));
-        para3bg.setText(sPref.getString("para3bg", "С (вр.)"));
-        para4bg.setText(sPref.getString("para4bg", "С (вр.)"));
-        para5bg.setText(sPref.getString("para5bg", "С (вр.)"));
-        para1end.setText(sPref.getString("para1end", "До (вр.)"));
-        para2end.setText(sPref.getString("para2end", "До (вр.)"));
-        para3end.setText(sPref.getString("para3end", "До (вр.)"));
-        para4end.setText(sPref.getString("para4end", "До (вр.)"));
-        para5end.setText(sPref.getString("para5end", "До (вр.)"));
+        para1bg.setText(sPref.getString("para1bg", "С 08:00"));
+        para2bg.setText(sPref.getString("para2bg", "С 09:00"));
+        para3bg.setText(sPref.getString("para3bg", "С 10:00"));
+        para4bg.setText(sPref.getString("para4bg", "С 11:00"));
+        para5bg.setText(sPref.getString("para5bg", "С 12:00"));
+        para1end.setText(sPref.getString("para1end", "До 08:30"));
+        para2end.setText(sPref.getString("para2end", "До 09:30"));
+        para3end.setText(sPref.getString("para3end", "До 10:30"));
+        para4end.setText(sPref.getString("para4end", "До 11:30"));
+        para5end.setText(sPref.getString("para5end", "До 12:30"));
         switch (chosenday) {
             case 0:{
                 edit1.setText(sPref.getString(days[chosenday]+subjects[0]+week, ""));
